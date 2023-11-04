@@ -48,6 +48,7 @@ body {
     body{
         background-color: #fff;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .relogio > div{
@@ -83,6 +84,7 @@ body {
     body{
         background-color: #fff;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .relogio > div{
@@ -118,6 +120,7 @@ body {
     body{
         background-color: #fff;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .relogio > div{
