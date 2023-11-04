@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: 1s linear;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: poppins;
+    font-family: poppins, sans-serif;
 }
 
 .relogio{
@@ -40,5 +41,106 @@ body {
 .num{
     color: #fff;
     font-size: 60px;
+}
 
+@media (max-width: 414px) {
+    body{
+        background-color: #fff;
+    }
+
+    .relogio > div{
+        background-color: black;
+        height: 100px;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    .num{
+        color: #fff;
+        font-size: 40px;
+    }
+    .relogio{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 330px;
+        height: 130px;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    body{
+        background-color: #fff;
+    }
+
+    .relogio > div{
+        background-color: black;
+        height: 150px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    .num{
+        color: #fff;
+        font-size: 40px;
+    }
+    .relogio{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 420px;
+        height: 170px;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        background-color: #fff;
+    }
+
+    .relogio > div{
+        background-color: black;
+        height: 120px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    .num{
+        color: #fff;
+        font-size: 40px;
+    }
+    .relogio{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 350px;
+        height: 150px;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
 }
