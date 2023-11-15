@@ -118,4 +118,31 @@ input {
     width: 90%;
 }
 
+#enviar{
+    margin-top: 15px;
+    height: 40px;
+    width: 95%;
+    background-color: #0bb454;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px 1px #0bb454;
+}
 
+.esquecer{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.passbox{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.passbox > input{
+    width: 15px;
+}
