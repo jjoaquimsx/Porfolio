@@ -26,14 +26,14 @@
                         <div class="login">
                             <p>
                                 <label for="iuser">Digite seu usuario:</label> <br>
-                                <input type="text" name="user" id="iuser" placeholder="Usuario">
+                                <input type="text" name="user" id="iuser" placeholder="Usuario" maxlength="40" >
                             </p>
                             <p>
                                 <label for="ipass">Senha:</label> <br>
-                                <input type="password" name="senha" id="ipass" placeholder="Senha">
+                                <input type="password" name="senha" id="ipass" placeholder="Senha" maxlength="15" minlength="8" required>
                             </p>
                             <p>
-                                <input type="submit" value="Entrar" id="enviar" onclick="enviar()">
+                                <input type="submit" value="Login" id="enviar" onclick="enviar()">
                             </p>
                         </div>
                         <span>
@@ -50,6 +50,15 @@
 
         </main>
     </div>
+
+    <script>
+        function enviar(){
+            let login = document.getElementById("iuser").value
+            let senha = document.getElementById("ipass").value
+
+            
+        }
+    </script>
 </body>
 
 </html>

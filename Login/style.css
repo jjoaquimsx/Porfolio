@@ -101,6 +101,8 @@ input {
     font-size: 15px;
     padding: 5px;
     color: #034159;
+    font-weight: bold;
+    color:  #0bb454;
 }
 
 .type-1:hover {
@@ -145,4 +147,8 @@ input {
 
 .passbox > input{
     width: 15px;
+}
+
+#enviar{
+    color: #010326;
 }
