@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suely Luxus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Produtos Luxus</h1>
+    </head>
+    <main>
+        <span>
+            <img src="imgs/Imagem do WhatsApp de 2024-01-07 à(s) 13.10.15_67f350f6.jpg" alt="">
+            <h3>Kit calcinha pintadinha</h3>
+            <h3>Tamanhos:
+                <form action="" id="tamPin" name="myformPin">
+                    <input type="radio" name="TamPintad" value="PM">
+                    <label>PP</label>
+                    <input type="radio" name="TamPintad" value="M">
+                    <label>M</label>
+                    <input type="radio" name="TamPintad" value="G">
+                    <label>G</label>
+                    <input type="radio" name="TamPintad" value="GG">
+                    <label>GG</label>
+                </form>
+            </h3>
+            <a href="#" target="_blank" id="linkpin"><input type="button" id="elementA" value="EU QUERO" class="euquero"
+                onclick="tamP()"></a>
+        </span>
+
+        <span>
+            <img src="imgs/Imagem do WhatsApp de 2024-01-07 à(s) 13.11.17_8b83cb78.jpg" alt="">
+            <h3>Kit bolsa 3 cueca box</h3>
+            <h3>Tamanhos:
+                <form action="" id="" name="myform02">
+                    <input type="radio" name="form02" value="PM" id="PP">
+                    <label>PP</label>
+                    <input type="radio" name="form02" value="M">
+                    <label>M</label>
+                    <input type="radio" name="form02" value="G">
+                    <label>G</label>
+                    <input type="radio" name="form02" value="GG">
+                    <label>GG</label>
+                </form>
+            </h3>
+            <a href="#" id="linkcueca" target="_blank"><input type="button" value="EU QUERO" class="euquero" onclick="enviarCueca()"></a>
+        </span>
+
+        <span>
+            <img src="imgs/Imagem do WhatsApp de 2024-01-07 à(s) 13.11.57_da41a70a.jpg" alt="">
+            <h3>Short de microfibra</h3>
+            <h3>Tamanhos:
+                <form action="" id="tamanhos" name="myform03">
+                    <input type="radio" name="tamanho" value="PM" id="PP">
+                    <label>PM</label>
+                    <input type="radio" name="tamanho" value="M">
+                    <label>M</label>
+                    <input type="radio" name="tamanho" value="G">
+                    <label>G</label>
+                    <input type="radio" name="tamanho" value="GG">
+                    <label>GG</label>
+                </form>
+            </h3>
+            <a href="#" target="_blank" id="linkMic"><input type="button" id="elementA" value="EU QUERO" class="euquero"
+                    onclick="tamMicro()"></a>
+        </span>
+    </main>
+    <script>
+        var link = document.getElementById("linkMic")
+        var linkPin = document.getElementById(`linkpin`)
+        var linkcueca = document.getElementById(`linkcueca`)
+
+        function tamMicro() {
+
+            let tam = document.forms['myform03']['tamanho'];
+            if (tam[0].checked == false && tam[1].checked == false && tam[2].checked == false && tam[3].checked == false) {
+                alert('Por favor selecione um tamanho')
+                link.href = ``
+                link.target = `_self`
+            } else if (tam[0].checked) {
+                link.href = 'https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+short+de+microfibra+tamanho+PM'
+            } else if (tam[1].checked) {
+                link.href = 'https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+short+de+microfibra+tamanho+M'
+            } else if (tam[2].checked) {
+                link.href = `https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+short+de+microfibra+tamanho+G`
+            } else if (tam[3].checked) {
+                link.href = `https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+short+de+microfibra+tamanho+GG `
+            }
+        }
+
+        function tamP(){
+            let tam = document.forms['tamPin']['TamPintad'];
+            if (tam[0].checked == false && tam[1].checked == false && tam[2].checked == false && tam[3].checked == false) {
+                alert('Por favor selecione um tamanho')
+                linkpin.href = ``
+                linkpin.target = `_self`
+            } else if (tam[0].checked) {
+                linkpin.href = 'https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+de+Calcinha+da+Galinha+Pintadinha+tamanho+PP'
+            } else if (tam[1].checked) {
+                linkpin.href = 'https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+de+Kit+de+Calcinha+da+Galinha+Pintadinha+tamanho+M'
+            } else if (tam[2].checked) {
+                linkpin.href = `https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+de+Calcinha+da+Galinha+Pintadinha+tamanho+G`
+            } else if (tam[3].checked) {
+                linkpin.href = `https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+de+Calcinha+da+Galinha+Pintadinha+tamanho+GG `
+            }
+        }
+
+        function enviarCueca(){
+            let tam = document.forms['myform02']['form02'];
+            if (tam[0].checked == false && tam[1].checked == false && tam[2].checked == false && tam[3].checked == false) {
+                alert('Por favor selecione um tamanho')
+                linkcueca.href = ``
+                linkcueca.target = `_self`
+            } else if (tam[0].checked) {
+                linkcueca.href = 'https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+bolsa+3+cueca+box+tamanho+PP'
+            } else if (tam[1].checked) {
+                linkcueca.href = 'https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+bolsa+3+cueca+box+tamanho+M'
+            } else if (tam[2].checked) {
+                linkcueca.href = `https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+bolsa+3+cueca+box+tamanho+G`
+            } else if (tam[3].checked) {
+                linkcueca.href = `https://wa.me/5588981244495?text=Ol%C3%A1+gostaria+de+fazer+o+pedido+de+um+Kit+bolsa+3+cueca+box+tamanho+GG `
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
