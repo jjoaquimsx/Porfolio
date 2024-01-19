@@ -11,6 +11,9 @@ body{
 }
 
 @media screen and (max-width: 900px) {
+    body{
+        overflow-x:hidden;
+    }
     main {
         display: flex;
         flex-direction: column;
@@ -22,6 +25,10 @@ body{
 
     h3 {
         margin-top: 8px;
+    }
+
+    header > h1 {
+        padding: 0.8em;
     }
 }
 
@@ -44,7 +51,7 @@ main {
 }
 
 span {
-    margin: 0px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
     background-color: #d3d3d3;
     border-radius: 0.8em;
     padding: 0.4em;
@@ -99,3 +106,8 @@ img {
     background-position: right top;
 }
 
+
+
+header > h1 {
+    padding: 0.8em;
+}
