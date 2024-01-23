@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <section class="left-side">
+                <h1>
+                    Seja bem-vindo <br>
+                </h1>
+                <p>Cadastre-se ou faça login</p>
+                <img src="Curious-cuate.svg" alt="imagen-login" class="img-login">
+            </section>
+            <section class="right-side">
+                <form action="">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div class="login">
+                            <p>
+                                <label for="iuser">Digite seu usuario:</label> <br>
+                                <input type="text" name="user" id="iuser" placeholder="Usuario" maxlength="40" >
+                            </p>
+                            <p>
+                                <label for="ipass">Senha:</label> <br>
+                                <input type="password" name="senha" id="ipass" placeholder="Senha" maxlength="15" minlength="8" required>
+                            </p>
+                            <p>
+                                <input type="submit" value="Login" id="enviar" onclick="enviar()">
+                            </p>
+                        </div>
+                        <span>
+                            Esqueci a senha
+                        </span>
+                        <p class="passbox">
+                            <input type="checkbox" name="salvar" id="isenha">
+                            <label for="isenha">Lembrar senha</label>
+                        </p>
+                    </fieldset>
+                </form>
+
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function enviar(){
+            let login = document.getElementById("iuser").value
+            let senha = document.getElementById("ipass").value
+
+            
+        }
+    </script>
+</body>
+
+</html>
