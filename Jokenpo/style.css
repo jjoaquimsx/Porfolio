@@ -1,38 +1,100 @@
-#container{
-    border: 1px solid red;
+*{
+    font-family: Poppins, sans-serif;
 }
 
-#placar{
-    border: 1px solid blue;
+.principal {
+}
+
+.titulo{
+    text-align: center;
+}
+
+.placar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1{
+.mensagens {
+    background: linear-gradient(to right, crimson, cadetblue);
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 20px;
     text-align: center;
+    padding: 5px 0;
 }
 
-#mensagens{
-    border: 1px solid green;
-    text-align: center;
-}
-
-#left-side{
-    background: red;
-}
-
-#versus{
-    background: #fff;
-    background: blue;
-    flex-grow: 0.5;
-}
-
-#right-side{
-    background-color: green;
-}
-
-#left-side, #right-side{
+.jogador, .maquina{
+    position: relative;
     flex-grow: 1;
-    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+#jogadorPonto{
+    right: 20px;
+}
+
+.versus{
+    font-size: 48px ;
+    padding: 0 20px;
+}
+
+#jogadorPonto, #maquinaPonto{
+    font-size: 40px;
+    position: absolute;
+    top: 8px;
+}
+
+.jogador {
+    background-color: crimson;
+}
+
+.maquina {
+    background-color: cadetblue;
+}
+
+.versus{
+    color: black;
+}
+
+.opacity img{
+    opacity: 0.6;
+    max-width: 80px;
+}
+
+#jogador-escolha img{
+    max-width: 80px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.jogador ul li, .maquina ul li{
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+}
+
+#jogador-escolha, #maquina-escolha{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#jogador-escolha img:hover, #jogador-escolha img.selecionado, #computador-escolha img.selecionado{
+    opacity: 1;
+}
+
+#maquina-escolha img:hover{
+    opacity: 1;
+}
+
+#maquina-nome{
+    text-align: right;
+    
 }
