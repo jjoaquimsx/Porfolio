@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Oswald&family=Quicksand:wght@300;600&display=swap');
 
 @media screen and (max-width: 685px) {
-    .card{
+    .card {
         border: 1px solid #7c7c7c8e;
         max-width: 220px;
         padding: 10px;
@@ -17,16 +17,16 @@
         box-sizing: border-box;
     }
 
-    nav > .nav-links{
+    nav>.nav-links {
         display: none;
     }
 
-    .caixas{
+    .caixas {
         display: flex;
         flex-direction: column;
     }
 
-    .icones{
+    .icones {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,12 +34,12 @@
         border: transparent;
     }
 
-    .icones img:hover{
+    .icones img:hover {
         scale: 1.2;
         border: 1px solid rgba(255, 0, 0, 0.452);
     }
 
-    .icones img{
+    .icones img {
         width: 48px;
         background-color: #7c7c7c8e;
         padding: 10px;
@@ -49,75 +49,76 @@
         border: transparent;
     }
 
-    .icones > a{
+    .icones>a {
         color: #fff;
 
     }
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color: #7c7c7c8e;
-        border-radius: 20px 20px 0px 0px ;
+        border-radius: 20px 20px 0px 0px;
     }
 
-    button > a{
+    button>a {
         color: #fff;
     }
 
-    .caixar{
+    .caixar {
         text-align: center;
     }
 
-    section{
+    section {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
 }
+
 @media screen {
 
-    section{
+    section {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
     }
 
-    *{
+    * {
         margin: 0;
         padding: 0;
         outline: none;
         border: none;
     }
 
-    html{
+    html {
         scroll-behavior: smooth;
     }
 
     body {
-        background: linear-gradient(140deg, rgba(66,73,141,1) 0%, rgba(14,8,52,1) 70%);
+        background: linear-gradient(140deg, rgba(66, 73, 141, 1) 0%, rgba(14, 8, 52, 1) 70%);
         color: #ffffff;
         box-sizing: border-box;
         font-family: Poppins, sans-serif;
     }
 
-    img{
+    img {
         width: 100%;
         display: flex;
     }
 
-    button > a{
+    button>a {
         color: #fff;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    nav{
+    nav {
         max-width: 1200px;
         margin: auto;
         padding: 2rem 1rem;
@@ -127,24 +128,24 @@
         gap: 2rem;
     }
 
-    .nav-logo{
+    .nav-logo {
         max-width: 80px;
     }
 
-    .nav-links{
+    .nav-links {
         list-style-type: none;
         display: flex;
         align-items: center;
         gap: 3rem;
     }
 
-    .link a{
+    .link a {
         position: relative;
         padding-bottom: 0.75rem;
         color: #fff;
     }
 
-    .link a::after{
+    .link a::after {
         content: "";
         position: absolute;
         height: 2px;
@@ -155,15 +156,15 @@
         transition: all 0.5s ease;
     }
 
-    section{
+    section {
         text-align: center;
     }
 
-    .link a:hover::after{
+    .link a:hover::after {
         width: 100%;
     }
 
-    .btn{
+    .btn {
         padding: 1rem 2rem;
         font-size: 1rem;
         color: #fff;
@@ -173,53 +174,56 @@
         transition: 0.3s all;
     }
 
-    .btn:hover{
-        background-color:rgba(255, 0, 0, 0.534) ;
+    .btn:hover {
+        background-color: rgba(255, 0, 0, 0.534);
     }
 
-    .container{
-        max-width: 1200px;
+    .container {
+        max-width: 1000px;
         margin: auto;
-        padding: 5rem 2rem;
+        padding: 3rem 1.8rem;
     }
 
-    .container h2{
+    .container h2 {
         line-height: 1em;
         margin-bottom: 2rem;
         font-size: 35px;
     }
 
 
-    h1 > span{
+    h1>span {
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px #fff;
     }
 
-    .head{
+    .head {
         text-align: center;
     }
 
-    .card a img{
+    .card a img {
         width: 30px;
         margin: auto;
     }
 
-    .card a img:hover{
+    .card a img:hover {
         filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 0.534));
     }
-    
 
-    .card p{
+
+    .card p {
         margin-bottom: 1rem;
     }
 
-    .card:hover{
+    .card:hover {
         border: 1px solid rgba(255, 0, 0, 0.534);
     }
 
-    .card{
+    .card {
         border: 1px solid #7c7c7c8e;
+        min-width: 200px;
         max-width: 220px;
+        max-height: 100px;
+        min-height: 80px;
         padding: 10px;
         margin: 0px 10px 10px 10px;
         display: inline-block;
@@ -227,12 +231,12 @@
         border-radius: 18px;
     }
 
-    .card:hover{
+    .card:hover {
         background-color: #a7a4a48e;
         scale: 1.1;
     }
 
-    .icones{
+    .icones {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -240,12 +244,17 @@
         border: transparent;
     }
 
-    .icones img:hover{
-        scale: 1.2;
-        border: 1px solid rgba(255, 0, 0, 0.452);
+    .icones:hover {
+        transition: 1s ease-in;
     }
 
-    .icones img{
+    .icones img:hover {
+        scale: 1.2;
+        border: 1px solid rgba(255, 0, 0, 0.452);
+        box-shadow: 0px 0px 15px rgba(14, 18, 70, 0.493);
+    }
+
+    .icones img {
         width: 48px;
         background-color: #7c7c7c8e;
         padding: 10px;
@@ -255,17 +264,17 @@
         border: transparent;
     }
 
-    .icones > a{
+    .icones>a {
         color: #fff;
 
     }
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         background-color: #7c7c7c8e;
-        border-radius: 20px 20px 0px 0px ;
+        border-radius: 20px 20px 0px 0px;
     }
 
 }
@@ -279,22 +288,22 @@
     }
 
     body {
-        background: linear-gradient(140deg, rgba(66,73,141,1) 0%, rgba(14,8,52,1) 70%);
+        background: linear-gradient(140deg, rgba(66, 73, 141, 1) 0%, rgba(14, 8, 52, 1) 70%);
         color: #ffffff;
         box-sizing: border-box;
         font-family: Poppins, sans-serif;
     }
 
-    img{
+    img {
         width: 100%;
         display: flex;
     }
 
-    a{
+    a {
         text-decoration: none;
     }
 
-    nav{
+    nav {
         max-width: 1200px;
         margin: auto;
         padding: 2rem 1rem;
@@ -304,18 +313,18 @@
         gap: 2rem;
     }
 
-    .nav-logo{
+    .nav-logo {
         max-width: 80px;
     }
 
-    .nav-links{
+    .nav-links {
         list-style-type: none;
         display: flex;
         align-items: center;
         gap: 3rem;
     }
 
-    .link a{
+    .link a {
         position: relative;
         padding-bottom: 0.75rem;
         color: #fff;
