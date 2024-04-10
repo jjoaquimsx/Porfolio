@@ -211,7 +211,7 @@
 
 
     .card p {
-        margin-bottom: 1rem;
+        margin-bottom: .2rem;
     }
 
     .card:hover {
@@ -227,7 +227,7 @@
         padding: 10px;
         margin: 0px 10px 10px 10px;
         display: inline-block;
-        transition: 1s linear all;
+        transition: .8s ease all;
         border-radius: 18px;
     }
 
@@ -275,6 +275,22 @@
         justify-content: space-evenly;
         background-color: #7c7c7c8e;
         border-radius: 20px 20px 0px 0px;
+    }
+
+    .langIcons {
+        display: flex;
+        gap: .3rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+
+        img{
+            width: 2rem;
+        }
+
+        .js{
+            width: 1.7rem;
+        }
     }
 
 }
