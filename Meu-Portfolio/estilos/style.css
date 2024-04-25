@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Oswald&family=Quicksand:wght@300;600&display=swap');
 
+.myocto {
+    display: none;
+}
+
 @media screen and (max-width: 685px) {
     .card {
         border: 1px solid #7c7c7c8e;
@@ -78,7 +82,22 @@
 
 }
 
+
 @media screen {
+    .myocto {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 35%;
+        left: 67.5%;
+        top: 25%;
+        opacity: .7;
+    }
+
+
+    body {
+        overflow-x: hidden;
+    }
 
     section {
         display: flex;
@@ -130,6 +149,14 @@
 
     .nav-logo {
         max-width: 80px;
+    }
+
+    .nav-logo{
+        a{
+            img{
+                width: 250%;
+            }
+        }
     }
 
     .nav-links {
@@ -284,11 +311,11 @@
         justify-content: center;
         margin-bottom: 0.5rem;
 
-        img{
+        img {
             width: 2rem;
         }
 
-        .js{
+        .js {
             width: 1.7rem;
         }
     }
@@ -302,6 +329,7 @@
         outline: none;
         border: none;
     }
+
 
     body {
         background: linear-gradient(140deg, rgba(66, 73, 141, 1) 0%, rgba(14, 8, 52, 1) 70%);
@@ -344,5 +372,9 @@
         position: relative;
         padding-bottom: 0.75rem;
         color: #fff;
+    }
+
+    .myocto {
+        display: none;
     }
 }

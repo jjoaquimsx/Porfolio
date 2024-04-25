@@ -13,7 +13,7 @@
 
         <div class="nav-logo">
             <a href="">
-                <img src="estilos/imgs/Minha-logo-branca.png">
+                <img src="estilos/imgs/01 PNG.png">
             </a>
         </div>
 
@@ -120,6 +120,8 @@
                         src="estilos/imgs/seta-direita-branca.png" alt=""></a>
             </div>
         </div>
+
+        <img src="estilos/imgs/octocat-1714005404419.png" alt="myoctocat" class="myocto" id="octo">
     </section>
 
 
@@ -153,8 +155,13 @@
     </footer>
 
     <script>
+        const myocto = document.getElementById('octo')
+        const tela = innerWidth
 
-    </script>
+        while(tela < 1600){
+            myocto.style.display = "none"
+        }
+</script>
 </body>
 
 </html>
