@@ -84,17 +84,6 @@
 
 
 @media screen {
-    .myocto {
-        display: block;
-        position: absolute;
-        z-index: -1;
-        width: 35%;
-        left: 67.5%;
-        top: 25%;
-        opacity: .7;
-    }
-
-
     body {
         overflow-x: hidden;
     }
